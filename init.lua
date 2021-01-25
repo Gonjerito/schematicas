@@ -193,7 +193,7 @@ local function step(stack)
 				else
 					if is_good then
 						if build_index % 500 == 0 then
-							minetest.send_chat_message("[Schematicas] " .. build_index .. " of " .. #build_data .. " blocks placed")
+							minetest.display_chat_message("[Schematicas] " .. build_index .. " of " .. #build_data .. " blocks placed")
 						end
 						last_good_block = build_index
 						build_index = build_index + 1
